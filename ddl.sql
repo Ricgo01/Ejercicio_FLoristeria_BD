@@ -128,3 +128,11 @@ CREATE TABLE historial_entregas (
     observaciones TEXT,
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id)
 );
+
+-- Registro de cada vez que alguien borre un detalle_pedido 
+CREATE TABLE log_eliminaciones (
+    id SERIAL PRIMARY KEY,
+    tabla TEXT,
+    id_eliminado INT,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

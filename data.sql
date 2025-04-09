@@ -268,3 +268,11 @@ INSERT INTO historial_entregas (id_pedido, fecha_entrega, observaciones) VALUES
 (26, '2025-04-18', 'Pedido #26 entregado sin novedad.'),
 (27, '2025-04-15', 'Pedido #27 entregado sin novedad.'),
 (29, '2025-04-17', 'Pedido #29 entregado sin novedad.');
+
+INSERT INTO log_eliminaciones (tabla, id_eliminado)
+VALUES 
+    ('detalle_arreglo', 1),
+    ('detalle_arreglo', 2),
+    ('detalle_arreglo', 5),
+    ('detalle_arreglo', 7),
+    ('detalle_arreglo', 8),
