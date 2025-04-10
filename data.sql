@@ -275,4 +275,4 @@ VALUES
     ('detalle_arreglo', 2),
     ('detalle_arreglo', 5),
     ('detalle_arreglo', 7),
-    ('detalle_arreglo', 8),
+    ('detalle_arreglo', 8);
