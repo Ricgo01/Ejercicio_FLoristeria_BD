@@ -161,7 +161,7 @@ BEFORE TRUNCATE ON log_eliminaciones
 FOR EACH STATEMENT
 EXECUTE FUNCTION bloquear_truncate_si_no_es_admin();
 
--- AFTER TRUNCATE: Registrar los cambios despues de truncar los pedidos
+-- AFTER TRUNCATE: REGISTRAR LOS CAMBIOS DESPUES DE TRUNCAR EL LOG DE ELIMINACIONES
 
 CREATE OR REPLACE FUNCTION registrar_truncate()
 RETURNS TRIGGER AS $$
