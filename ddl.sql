@@ -136,3 +136,11 @@ CREATE TABLE log_eliminaciones (
     id_eliminado INT,
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Registro de cada vez que se haga un truncate en la base de datos
+CREATE TABLE log_truncates (
+    id SERIAL PRIMARY KEY,
+    tabla_afectada TEXT,
+    usuario TEXT,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
